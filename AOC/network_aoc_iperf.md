@@ -38,7 +38,7 @@ If you get "Link detected: no", run the command:
 
     ifconfig ethx 10.x.x.x
 
-You may choose the last three digits of the ip address, just make sure the first digits is 10 . Also, make sure that the static ip address you set is different for each system.
+You may choose the last three digits of the ip address, just make sure the first digit is 10 . Also, make sure that the static ip address you set is different for each system.
 
 For example, the **host** system, with NIC port 1 connected, may be set as:
 
@@ -48,9 +48,9 @@ while the **SUT** also with NIC port 2 connected may be set as:
 
     ifconfig eth2 10.0.0.2
 
-The static ip addresses shown in the previous two examples will be used going forward, 10.0.0.1 for  host, and 10.0.0.2 for SUT.
+The static ip addresses shown in the previous two examples will be used for all examples going forward in this guide, 10.0.0.1 for  host, and 10.0.0.2 for SUT.
 
-To verify that the systems are linked by having them ping each other. Run the following command on SUT: 
+Verify that the systems are linked by having them ping each other. Run the following command on SUT: 
 
     ping 10.0.0.1
 
